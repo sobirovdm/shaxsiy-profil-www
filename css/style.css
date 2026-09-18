@@ -1,0 +1,156 @@
+/* 
+Stillar https://jigsaw.w3.org/css-validator/ sayti orqali validatsiyadan o'tkazildi.
+*/
+
+/* GLOBAL STYLES */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1920px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(to right, #edf7f7, #fff);
+}
+
+/* HEADER */
+.header {
+    top: 0;
+    z-index: 2;
+    position: sticky;
+
+    color: #fff;
+    margin-bottom: 3rem;
+    padding: 1.5rem 0 0.5rem;
+    background-color: #3a86fe;
+}
+
+.header__title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* NAVIGATION MENU */
+.navbar {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
+    position: static;
+}
+
+.navbar__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar__link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+/* PROFILE CARD */
+.profile-card {
+    width: 320px;
+    
+    padding: 1.5rem;
+    margin: 1rem auto 3rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+}
+
+.card-img__wrapper { margin-bottom: 2rem; }
+
+.card__img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.card__title { margin-bottom: 1.5rem; }
+
+.card__text { margin-bottom: 2rem; }
+
+.card__btn {
+    color: #fff;
+    text-decoration: none;
+
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: #3a86fe;
+}
+
+/* INFO SECTION */
+.info {   
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+
+.info__left,
+.info__right {
+    width: 450px;
+    height: 130px;
+
+    padding: 1rem;
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid hsl(0, 0%, 70%);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.info__left {
+    float: left;
+    text-align: left;
+    margin-right: 9rem;
+    margin-left: 10rem;
+}
+
+.info__left img {
+    float: left;
+    margin-right: 1rem;
+}
+
+/* .info__right { text-align: right; } */ /* Matnlar o'ngga surilganda xunik bo'lib qoldi, shuning uchun commentga olib qo'ydim */
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    max-width: inherit;
+    position: fixed; /* TZda footer fixed bo'lishi kerak deyilgan ekan, shuning uchun fixed qilib qo'ydim. Noodatiy bo'lib qoldi. */
+    bottom: 0;
+    padding: 1rem 0.5rem;
+    background-color: #3a86fe;    
+}
+
+.footer__text {
+    color: #fff;
+    text-align: center;
+}
+
+.guide-btn {
+    top: 20%;
+    right: 8px;
+    position: absolute;
+    
+    width: 32px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #bebbbb;
+}
